@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Step 2') {
+      steps {
+        sh 'gradlew init'
+      }
+    }
+
   }
 }
